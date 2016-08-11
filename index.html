@@ -1,0 +1,71 @@
+<!doctype html>
+<meta charset="utf-8">
+<html>
+  <head>
+    <style type="text/css">
+      #canvas {
+        width: 2500px;
+        height: 1500px;
+      }
+      #canvas text {
+        text-anchor: middle;
+        font-family: Arial, sans-serif;
+        font-size: 100px;
+      }
+
+
+      div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 350px;
+    height: 370px;
+    padding: 2px;
+    font: 52px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 150px;
+    margin-left: 500px;
+    background-color:rgba(176, 196, 222, 0.9);
+    width: 1200px;
+    height: 1050px;
+    border: 1px #ccc solid;
+    border-radius: 6px;
+    box-shadow: #333 2px 2px 4px;
+    padding: 8px;
+    font-family: arial, helvetica, sans-serif;
+    font: 52px sans-serif;
+    overflow: auto;
+}
+.popup h2 {
+    margin: 0 0 1rem 0;
+}
+
+.stroke {
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #F00, 1px -1px 0 #000,
+            -1px 1px 0 #000, 3px 3px 5px #000;
+}
+
+    </style>
+
+
+  </head>
+
+  <body>
+
+
+       <div id="canvas"></div>
+
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="main.js"></script>
+
+  </body>
+</html>
