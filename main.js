@@ -1,7 +1,7 @@
 ;(function() {
 
   var data; // a global
-  d3.json("top200.json", function(error, json) {
+  d3.json("top150.json", function(error, json) {
     if (error) return console.warn(error);
     data = json;
     main();
